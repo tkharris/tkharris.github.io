@@ -1,0 +1,58 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=20O0u0kllllaFw0g0qFqFg0w0aF */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  font-size: 14px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container-fluid {
+    margin-top: 20px;
+    max-width: 730px;
+  }
+}
+
+#sidebar {
+  margin-left: 1em;
+}
+
+#sidebar .well {
+  background: #107896;
+  color: #f2f3f4;
+}
+
+#sidebar a {
+  color: #efd469;
+}
+
+#sidebar .container-block{
+  max-width: 280px;
+}
+
+img.gravatar {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.main-wrapper {
+  background: #f2f3f4;
+  color: #373d3f;
+}
+
+.item, li {
+  page-break-inside: avoid !important;
+}
+
+.fa {
+  margin-right: 0.5em;
+}

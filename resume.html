@@ -1,0 +1,199 @@
+---
+title: Resume
+permalink: /resume/
+---
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+{% assign cv = site.data.cv %}
+<head>
+  <title>{{ cv.name }} CV</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= @data['name'] %> CV">
+  <meta name="author" content="Thomas K Harris">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- Global CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Plugins CSS -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="/css/cv.css">
+
+  <script src="http://www.myersdaily.org/joseph/javascript/md5.js"></script>
+  <script src="/js/gravatar.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="sidebar" class="pull-right">
+        <div class="well">
+          <div class="profile-container container-block">
+            <img class="gravatar" email="{{ cv.email }}" alt="{{ cv.name }}" />
+            <h1 class="name">{{ cv.name }}</h1>
+            {% if cv.tahline != null %}
+              <h3 class="tagline">{{ cv.tagline }}</h3>
+            {% endif %}
+          </div><!--//profile-container-->
+
+          <div class="contact-container container-block">
+            <ul class="list-unstyled fa-ul contact-list">
+              <li class="email"><i class="fa fa-li fa-envelope"></i><a href="mailto:{{ cv.email }}">{{ cv.email }}</a></li>
+              <li class="phone"><i class="fa fa-li fa-phone"></i><a href="tel:{{ cv.phone }}">{{ cv.phone }}</a></li>
+              {% if cv.website != null %}
+                <li class="website"><i class="fa fa-li fa-globe"></i><a href="{{ cv.webkite }}" target="_blank">{{ cv.website }}</a></li>
+              {% endif %}
+              {% if cv.linkedin != null %}
+                <li class="linkedin"><i class="fa fa-li fa-linkedin"></i><a href="{{ cv.linkedin }}" target="_blank">{{ cv.linkedin }}</a></li>
+              {% endif %}
+              {% if cv.github != null %}
+                <li class="github"><i class="fa fa-li fa-github"></i><a href="{{ cv.github }}" target="_blank">{{ cv.github }}</a></li>
+              {% endif %}
+              {% if cv.twitter != null %}
+                <li class="twitter"><i class="fa fa-li fa-twitter"></i><a href="https://twitter.com/{{ cv.twitter }}" target="_blank">@{{ cv.twitter}}</a></li>
+              {% endif %}
+            </ul>
+          </div><!--//contact-container-->
+
+          <div class="education-container container-block">
+            <h2 class="container-block-title"><i class="fa fa-graduation-cap"></i>Education</h2>
+            {% for e in cv.education %}
+              <div class="item">
+                <h4 class="degree">{{ e.degree }} in {{ e.field }}</h4>
+                <h5 class="meta">{{ e.institution }}</h5>
+                <div class="time">{{ e.year }}</div>
+                {% if e.thesis != null %}
+                  <p>Thesis: <i>{{ e.thesis }}</i></p>
+                {% endif %}
+              </div><!--//item-->
+            {% endfor %}
+          </div><!--//education-container-->
+
+          <div class="interests-container container-block">
+            <h2 class="container-block-title"><i class="fa fa-thumbs-up"></i>Interests</h2>
+            <ul class="list-unstyled interests-list">
+              {% for e in cv.software-and-systems-engineering.interests %}
+                <li>{{ e }}</li>
+              {% endfor %}
+            </ul>
+          </div><!--//interests-->
+        </div><!--//well-->
+      </div><!--//pull-right-->
+
+      <div class="main-wrapper well">
+
+        {% if cv.profile != null %}
+          <section class="section summary-section">
+            <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+            <div class="summary">
+              <p>{{ cv.profile }}</p>
+            </div><!--//summary-->
+          </section><!--//section-->
+        {% endif %}
+
+        <section class="section experiences-section">
+          <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+          {% for e in cv.employment %}
+            <div class="item">
+              <div class="meta">
+                <div class="upper-row">
+                  <h3 class="job-title">{{ e.position }}</h3>
+                  <div class="time">{{ e.start }} - {{ e.end }}</div>
+                </div><!--//upper-row-->
+                <div class="company">
+                  {{ e.company }}
+                  {% if e.location != null %}, {{ e.location }}{% endif %}
+                </div>
+              </div><!--//meta-->
+              {% if e.statement != null %}
+                <div class="details">
+                  <p>{{ e.statement }}</p>
+                </div><!--//details-->
+              {% endif %}
+            </div><!--//item-->
+          {% endfor %}
+        </section>
+
+        {% if cv.projects != null %}
+          <section class="section projects-section">
+            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+            <div class="intro">
+              <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+            </div><!--//intro-->
+            <div class="item">
+              <span class="project-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
+            </div><!--//item-->
+          </section><!--//section-->
+        {% endif %}
+
+        {% if cv.skills != null %}
+          <section class="skills-section section">
+            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+            <div class="skillset">
+              <div class="item">
+                <h3 class="level-title">Python &amp; Django</h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="98%">
+                </div>
+              </div><!--//level-bar-->
+            </div><!--//item-->
+          </section><!--//skills-section-->
+        {% endif %}
+
+        <section class="research-section section">
+          <h2 class="section-title"><i class="fa fa-pencil"></i>Research &amp; Writing</h2>
+          <ul>
+            {% for b in cv.research-and-writing %}
+              <li>{{ b }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section class="software-section section">
+          <h2 class="section-title"><i class="fa fa-rocket"></i>Software &amp; Systems Engineering</h2>
+          <ul>
+            <li>
+              Developed code in {{ cv.software-and-systems-engineering.programming-languages | size }} different programming languages
+            </li>
+            {% for b in cv.software-and-systems-engineering.bullets %}
+              <li>{{ b }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section class="management-section section">
+          <h2 class="section-title"><i class="fa fa-users"></i>Entrepreneurship &amp; Management</h2>
+          <ul>
+            {% for b in cv.entrepreneurship-and-management %}
+              <li>{{ b }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+
+      </div><!--//main-body-->
+    </div><!--//row-->
+  </div><!--//container-->
+</body>
+</html>
