@@ -11,3 +11,5 @@ permalink: /education/
   - D. Bertsimas and J.N. Tsitsiklis, Introduction to Linear Optimization, Athena Scientific, 1997.
 - Graph Thory
   - Bondy and Murthy, [Graph Theory with Applications](https://www.iro.umontreal.ca/~hahn/IFT3545/GTWA.pdf).
+- Sci Fi
+  - Three Body Problem.
