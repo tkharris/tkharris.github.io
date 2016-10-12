@@ -1,11 +1,4 @@
-/* CSS - Cascading Style Sheet */
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=20O0u0kllllaFw0g0qFqFg0w0aF */
-
-/* Feel free to copy&paste color codes to your application */
-
-
-/* As hex codes */
+/* colors from https://www.viget.com/articles/color-contrast */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -26,8 +19,8 @@ body {
 }
 
 #sidebar .well {
-  background: #107896;
-  color: #f2f3f4;
+  background: #107896; /* darkest alice */
+  color: #f2f3f4; /* lilia */
 }
 
 #sidebar a {
@@ -45,8 +38,8 @@ img.gravatar {
 }
 
 .main-wrapper {
-  background: #f2f3f4;
-  color: #373d3f;
+  background: #f2f3f4; /* lilia */
+  color: #373d3f; /* raven */
 }
 
 .item, li {
