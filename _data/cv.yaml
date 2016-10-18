@@ -2,12 +2,12 @@ name: Thomas Kevin Harris
 email: tkharris@gmail.com
 phone: "412.448.7583"
 research-and-writing:
-  - Authored or Co-Authored   15 research papers in Human-Computer Interaction,
+  - Authored or co-authored 15 research papers in Human-Computer Interaction,
     Human-Robot Interaction, and Learning Sciences, including the best paper award
     at the 2009 International Conference on Educational Data Mining
   - Primary author of several grants, including a successful $150k National Science
     Foundation Grant
-  - $25k Alphalab investment award
+  - $25k AlphaLab investment award
 software-and-systems-engineering:
   programming-languages:
     - Ruby
@@ -55,7 +55,7 @@ software-and-systems-engineering:
     - A deep understanding of the concepts, issues, and protocols underlying
       databases, operating systems, and computer networks
     - An experienced builder and maintainer of cloud-based provisioning and deployment
-      procedures with tools such as Chef and Ansible.
+      procedures with tools such as Chef and Ansible
     - An experienced software life-cycle professional; utilizing a variety of
       ticketing systems, repository manipulation tools, and test and deploy schema
 entrepreneurship-and-management:
@@ -68,51 +68,61 @@ employment:
     end: 2016
     position: CEO
     company: WebKite, Inc.
+    location: Pittsburgh
   -
     start: 2013
     end: 2014
     position: Senior Software Developer
     company: WebKite, Inc.
+    location: Pittsburgh
   -
     start: 2011
     end: 2013
-    position: CEO
+    position: Co-Founder and CEO
     company: Tutor Technologies, Inc.
+    location: Pittsburgh
   -
     start: 2008
     end: 2011
     position: Co-Founder and Managing Partner
     company: EDalytics LLC
+    location: Pittsburgh
   -
     start: 2006
     end: 2008
     position: Research Associate III
     company: Carnegie Mellon University
+    location: Pittsburgh
   -
     start: 2001
     end: 2005
     position: Graduate Research Assistant
     company: Carnegie Mellon University
+    location: Pittsburgh
   -
     start: 1999
     end: 2000
     position: Senior Software Engineer
     company: Saraf Software Inc.
+    location: Vienna, Virginia
   -
     start: 1998
     end: 1998
     position: Software Engineer
     company: TSI
+    location: Centreville, Virginia
   -
     start: 1995
     end: 2010
     position: Board Member
     company: Internet Doorway, Inc.
+    location: Jackson, Mississippi
   -
     start: 1995
     end: 1997
     position: Co-Founder and IT Manager
     company: Internet Doorway, Inc.
+    location: Jackson, Mississippi
 education:
   -
     degree: M.S.

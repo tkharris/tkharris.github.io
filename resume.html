@@ -124,7 +124,11 @@ permalink: /resume/
                 </div><!--//upper-row-->
                 <div class="company">
                   {{ e.company }}
-                  {% if e.location != null %}, {{ e.location }}{% endif %}
+                  {% if e.location != null %} - 
+                    <span class=company-location>
+                      {{ e.location }}
+                    </span>
+                  {% endif %}
                 </div>
               </div><!--//meta-->
               {% if e.statement != null %}
@@ -175,7 +179,10 @@ permalink: /resume/
           <h2 class="section-title"><i class="fa fa-rocket"></i>Software &amp; Systems Engineering</h2>
           <ul>
             <li>
-              Developed code in {{ cv.software-and-systems-engineering.programming-languages | size }} different programming languages
+              Developed code in 
+              <a href="#" data-toggle="tooltip" title="{{ cv.software-and-systems-engineering.programming-languages | join: ', ' }}"> 
+                {{ cv.software-and-systems-engineering.programming-languages | size }} different programming languages
+              </a>
             </li>
             {% for b in cv.software-and-systems-engineering.bullets %}
               <li>{{ b }}</li>
