@@ -135,8 +135,5 @@ DEPENDENCIES
   github-pages
   minima
 
-RUBY VERSION
-   ruby 2.1.1p76
-
 BUNDLED WITH
-   1.12.5
+   1.13.5
