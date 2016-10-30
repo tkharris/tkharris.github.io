@@ -73,6 +73,9 @@ permalink: /resume/
               {% if cv.twitter != null %}
                 <li class="twitter"><i class="fa fa-li fa-twitter"></i><a href="https://twitter.com/{{ cv.twitter }}" target="_blank">@{{ cv.twitter}}</a></li>
               {% endif %}
+              {% if cv.github != null %}
+                <li class="stackoverflow"><i class="fa fa-li fa-stack-overflow"></i><a href="{{ cv.stackoverflow }}" target="_blank">{{ cv.stackoverflow }}</a></li>
+              {% endif %}
             </ul>
           </div><!--//contact-container-->
 
