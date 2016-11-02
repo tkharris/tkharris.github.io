@@ -42,8 +42,17 @@ img.gravatar {
   color: #373d3f; /* raven */
 }
 
-.item, li {
+.item, li, .section {
   page-break-inside: avoid !important;
+}
+
+.section {
+  padding-top: 15px;
+}
+
+.item {
+  padding-top: 10px;
+  margin-top: -10px;
 }
 
 .fa {

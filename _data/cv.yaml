@@ -1,17 +1,16 @@
 name: Thomas Kevin Harris
 email: tkharris@gmail.com
 phone: "412.448.7583"
-stackoverflow: https://stackoverflow.com/story/tkharris
-linkedin: https://www.linkedin.com/in/thharris
-github: https://github.com/tkharris
+stackoverflow: stackoverflow.com/story/tkharris
+linkedin: linkedin.com/in/thomas-k-harris
+github: github.com/tkharris
 twitter: tkharris
 research-and-writing:
   - Authored or co-authored 15 research papers in Human-Computer Interaction,
     Human-Robot Interaction, and Learning Sciences, including the best paper award
     at the 2009 International Conference on Educational Data Mining
-  - Primary author of several grants, including a successful $150k National Science
-    Foundation Grant
-  - $25k AlphaLab investment award
+  - Primary author of several grants, including a successful $150K NSF SBIR grant
+  - $25K AlphaLab investment award
 software-and-systems-engineering:
   programming-languages:
     - Ruby
@@ -73,36 +72,76 @@ employment:
     position: CEO
     company: WebKite, Inc.
     location: Pittsburgh
+    statement:
+      - >
+        Created and marketed an automated advertising system which crawled websites (principally
+        automotive dealerships), performed ETL on inventory, and used features of the ETL
+        process to bid for ads on Google AdWords
+      - Managed a team that included a salesperson, an account executive, and two developers
   -
     start: 2013
     end: 2014
     position: Senior Software Developer
     company: WebKite, Inc.
     location: Pittsburgh
+    statement:
+      - Joined a team that was building an online list management tool
+      - Resolved backend performance issues in a Ruby Web stack
+      - Spearheaded effort to move from server-side to client-side rendering with backbone.js
+      - Created a Wordpress plugin for Wordpress integration
+      - Led internal performance analysis, usage analysis, and data visualization
+      - Interfaced product with Google Sheets via the Google Docs API
   -
     start: 2011
     end: 2013
     position: Co-Founder and CEO
     company: Tutor Technologies, Inc.
     location: Pittsburgh
+    statement:
+      - > 
+        Built an intelligent tutoring platform which continuously estimated skills based on the 
+        tutee's performance
+      - > 
+        Co-authored a Phase I SBIR grant which was funded by the National Science Foundation to design 
+        and build a WYSIWYG-style authoring interface for the platform
+      - Employed the GWT framework in Java, and a conducted a rewrite with Ruby on Rails
   -
     start: 2008
     end: 2011
     position: Co-Founder and Managing Partner
     company: EDalytics LLC
     location: Pittsburgh
+    statement:
+      - > 
+        Estimated more accurate latent learning parameters for a client's math tutoring system's based
+        on a Markovian model of student skill acquisition
+      - > 
+        Designed distributed ML architecture for the processing of millions of student performance 
+        records on an Amazon Hadoop platform
+      - Optimized Python Baum-Welch code with core inner loop components written in C++/Boost
+      - > 
+        Co-authored publications of some findings which resulted in the best paper award at the Second 
+        International Conference on Educational Data Mining
   -
     start: 2006
     end: 2008
     position: Research Associate III
     company: Carnegie Mellon University
     location: Pittsburgh
+    statement:
+      - Organized and maintained Olympus, a research platform for multimodal dialog
+      - Integrated a multi-robot control architecture into the Unreal Engine for virtual tests with MOAST
   -
     start: 2001
     end: 2005
     position: Graduate Research Assistant
     company: Carnegie Mellon University
     location: Pittsburgh
+    statement:
+      - >
+        Created the first system to estimate n-grams from probabilistic context free grammars for 
+        arbitrary&nbsp;<i>n</i>
+      - Built the spoken dialog component of the Personal Universal Controller project
   -
     start: 1999
     end: 2000
@@ -139,3 +178,6 @@ education:
     field: Computer Science
     institution: George Mason University
     year: 2001
+    awards:
+      - Upsilon Pi Epsilon society
+      - Magna Cum Laude

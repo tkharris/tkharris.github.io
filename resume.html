@@ -65,16 +65,16 @@ permalink: /resume/
                 <li class="website"><i class="fa fa-li fa-globe"></i><a href="{{ cv.webkite }}" target="_blank">{{ cv.website }}</a></li>
               {% endif %}
               {% if cv.linkedin != null %}
-                <li class="linkedin"><i class="fa fa-li fa-linkedin"></i><a href="{{ cv.linkedin }}" target="_blank">{{ cv.linkedin }}</a></li>
+                <li class="linkedin"><i class="fa fa-li fa-linkedin"></i><a href="https://www.{{ cv.linkedin }}" target="_blank">{{ cv.linkedin }}</a></li>
               {% endif %}
               {% if cv.github != null %}
-                <li class="github"><i class="fa fa-li fa-github"></i><a href="{{ cv.github }}" target="_blank">{{ cv.github }}</a></li>
+                <li class="github"><i class="fa fa-li fa-github"></i><a href="https://{{ cv.github }}" target="_blank">{{ cv.github }}</a></li>
               {% endif %}
               {% if cv.twitter != null %}
                 <li class="twitter"><i class="fa fa-li fa-twitter"></i><a href="https://twitter.com/{{ cv.twitter }}" target="_blank">@{{ cv.twitter}}</a></li>
               {% endif %}
               {% if cv.github != null %}
-                <li class="stackoverflow"><i class="fa fa-li fa-stack-overflow"></i><a href="{{ cv.stackoverflow }}" target="_blank">{{ cv.stackoverflow }}</a></li>
+                <li class="stackoverflow"><i class="fa fa-li fa-stack-overflow"></i><a href="https://{{ cv.stackoverflow }}" target="_blank">{{ cv.stackoverflow }}</a></li>
               {% endif %}
             </ul>
           </div><!--//contact-container-->
@@ -84,10 +84,16 @@ permalink: /resume/
             {% for e in cv.education %}
               <div class="item">
                 <h4 class="degree">{{ e.degree }} in {{ e.field }}</h4>
-                <h5 class="meta">{{ e.institution }}</h5>
-                <div class="time">{{ e.year }}</div>
+                <h5 class="meta">{{ e.institution }}, {{e.year}}</h5>
                 {% if e.thesis != null %}
-                  <p>Thesis: <i>{{ e.thesis }}</i></p>
+                  <div class="thesis">Thesis: <i>{{ e.thesis }}</i></div>
+                {% endif %}
+                {% if e.awards != null %}
+                  <ul class="awards">
+                    {% for award in e.awards %}
+                      <li>{{award}}</li>
+                    {% endfor %}
+                  </ul>
                 {% endif %}
               </div><!--//item-->
             {% endfor %}
@@ -95,7 +101,7 @@ permalink: /resume/
 
           <div class="interests-container container-block">
             <h2 class="container-block-title"><i class="fa fa-thumbs-up"></i>Interests</h2>
-            <ul class="list-unstyled interests-list">
+            <ul class="interests-list">
               {% for e in cv.software-and-systems-engineering.interests %}
                 <li>{{ e }}</li>
               {% endfor %}
@@ -135,9 +141,11 @@ permalink: /resume/
                 </div>
               </div><!--//meta-->
               {% if e.statement != null %}
-                <div class="details">
-                  <p>{{ e.statement }}</p>
-                </div><!--//details-->
+                <ul class="details">
+                  {% for detail in e.statement %}
+                    <li>{{ detail }}</li>
+                  {% endfor %}
+                </ul><!--//details-->
               {% endif %}
             </div><!--//item-->
           {% endfor %}
