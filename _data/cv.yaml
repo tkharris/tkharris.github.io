@@ -5,10 +5,15 @@ stackoverflow: stackoverflow.com/story/tkharris
 linkedin: linkedin.com/in/thomas-k-harris
 github: github.com/tkharris
 twitter: tkharris
+researchgate: Thomas_Harris9
 research-and-writing:
-  - Authored or co-authored 15 research papers in Human-Computer Interaction,
-    Human-Robot Interaction, and Learning Sciences, including the best paper award
-    at the 2009 International Conference on Educational Data Mining
+  - Authored or co-authored
+    <a href="https://www.researchgate.net/profile/Thomas_Harris9/publications"
+    target="_other">
+    16 research papers</a> in Human-Computer Interaction,
+    Human-Robot Interaction, and Learning Sciences, including the 
+    <a href="http://www.educationaldatamining.org/EDM2009/index.php?page=proceedings">
+    best paper award</a> at the 2009 International Conference on Educational Data Mining
   - Primary author of several grants, including a successful $150K NSF SBIR grant
   - $25K AlphaLab investment award
 software-and-systems-engineering:

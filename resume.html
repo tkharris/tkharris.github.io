@@ -64,17 +64,20 @@ permalink: /resume/
               {% if cv.website != null %}
                 <li class="website"><i class="fa fa-li fa-globe"></i><a href="{{ cv.webkite }}" target="_blank">{{ cv.website }}</a></li>
               {% endif %}
+              {% if cv.twitter != null %}
+                <li class="twitter"><i class="fa fa-li fa-twitter"></i><a href="https://twitter.com/{{ cv.twitter }}" target="_blank">@{{ cv.twitter}}</a></li>
+              {% endif %}
               {% if cv.linkedin != null %}
                 <li class="linkedin"><i class="fa fa-li fa-linkedin"></i><a href="https://www.{{ cv.linkedin }}" target="_blank">{{ cv.linkedin }}</a></li>
               {% endif %}
               {% if cv.github != null %}
                 <li class="github"><i class="fa fa-li fa-github"></i><a href="https://{{ cv.github }}" target="_blank">{{ cv.github }}</a></li>
               {% endif %}
-              {% if cv.twitter != null %}
-                <li class="twitter"><i class="fa fa-li fa-twitter"></i><a href="https://twitter.com/{{ cv.twitter }}" target="_blank">@{{ cv.twitter}}</a></li>
-              {% endif %}
-              {% if cv.github != null %}
+              {% if cv.stackoverflow != null %}
                 <li class="stackoverflow"><i class="fa fa-li fa-stack-overflow"></i><a href="https://{{ cv.stackoverflow }}" target="_blank">{{ cv.stackoverflow }}</a></li>
+              {% endif %}
+              {% if cv.researchgate != null %}
+                <li class="researchgate"><i class="fa fa-li fa-flask"></i><a href="https://www.researchgate.net/profile/{{ cv.researchgate }}" target="_blank">researchgate.net/profile/{{ cv.researchgate }}</a></li>
               {% endif %}
             </ul>
           </div><!--//contact-container-->
