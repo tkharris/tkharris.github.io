@@ -7,15 +7,14 @@ github: github.com/tkharris
 twitter: tkharris
 researchgate: Thomas_Harris9
 research-and-writing:
-  - Authored or co-authored
-    <a href="https://www.researchgate.net/profile/Thomas_Harris9/publications"
-    target="_other">
-    16 research papers</a> in Human-Computer Interaction,
-    Human-Robot Interaction, and Learning Sciences, including the 
-    <a href="http://www.educationaldatamining.org/EDM2009/index.php?page=proceedings">
+  - >
+    Authored or co-authored
+    <a href="https://www.researchgate.net/profile/Thomas_Harris9/publications" target="_other">
+    16 research papers</a> in Human-Computer Interaction, Human-Robot Interaction, and Learning Sciences, including the 
+    <a href="http://www.educationaldatamining.org/EDM2009/index.php?page=proceedings" target="_other">
     best paper award</a> at the 2009 International Conference on Educational Data Mining
-  - Primary author of several grants, including a successful $150K NSF SBIR grant
-  - $25K AlphaLab investment award
+  - $25K <a href="http://vimeo.com/24354470" target="_other">AlphaLab investment award</a>
+  - $150K <a href="https://www.sbir.gov/sbirsearch/detail/366701" target="_other">NSF SBIR grant</a>
 software-and-systems-engineering:
   programming-languages:
     - Ruby
