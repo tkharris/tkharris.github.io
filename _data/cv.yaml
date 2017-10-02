@@ -10,7 +10,7 @@ research-and-writing:
   - >
     Authored or co-authored
     <a href="https://www.researchgate.net/profile/Thomas_Harris9/publications" target="_other">
-    16 research papers</a> in Human-Computer Interaction, Human-Robot Interaction, and Learning Sciences, including the 
+    16 research papers</a> in Human-Computer Interaction, Human-Robot Interaction, and Learning Sciences, including the
     <a href="http://www.educationaldatamining.org/EDM2009/index.php?page=proceedings" target="_other">
     best paper award</a> at the 2009 International Conference on Educational Data Mining
   - $25K <a href="http://vimeo.com/24354470" target="_other">AlphaLab investment award</a>
@@ -71,6 +71,15 @@ entrepreneurship-and-management:
   - A clear motivation for furthering the business cases of technology solutions
 employment:
   -
+    start: 2016-12-31
+    end: 2017-10-02
+    position: Senior Software Engineer
+    company: M*Modal
+    location: Pittsburgh
+    statement:
+      - Created web services in Java (springboot) for a specific client integration.
+      - Managed Ansible deploys.
+  -
     start: 2014-11-01
     end: 2016-06-01
     position: CEO
@@ -102,11 +111,11 @@ employment:
     company: Tutor Technologies, Inc.
     location: Pittsburgh
     statement:
-      - > 
-        Built an intelligent tutoring platform which continuously estimated skills based on the 
+      - >
+        Built an intelligent tutoring platform which continuously estimated skills based on the
         tutee's performance
-      - > 
-        Co-authored a Phase I SBIR grant which was funded by the National Science Foundation to design 
+      - >
+        Co-authored a Phase I SBIR grant which was funded by the National Science Foundation to design
         and build a WYSIWYG-style authoring interface for the platform
       - Employed the GWT framework in Java, and conducted a rewrite with Ruby on Rails
   -
@@ -116,15 +125,15 @@ employment:
     company: EDalytics LLC
     location: Pittsburgh
     statement:
-      - > 
+      - >
         Estimated more accurate latent learning parameters for a client's math tutoring system's based
         on a Markovian model of student skill acquisition
-      - > 
-        Designed distributed ML architecture for the processing of millions of student performance 
+      - >
+        Designed distributed ML architecture for the processing of millions of student performance
         records on an Amazon Hadoop platform
       - Optimized Python Baum-Welch code with core inner loop components written in C++/Boost
-      - > 
-        Co-authored publications of some findings which resulted in the best paper award at the Second 
+      - >
+        Co-authored publications of some findings which resulted in the best paper award at the Second
         International Conference on Educational Data Mining
   -
     start: 2006-06-01
@@ -143,7 +152,7 @@ employment:
     location: Pittsburgh
     statement:
       - >
-        Created the first system to estimate n-grams from probabilistic context free grammars for 
+        Created the first system to estimate n-grams from probabilistic context free grammars for
         arbitrary&nbsp;<i>n</i>
       - Built the spoken dialog component of the Personal Universal Controller project
   -
