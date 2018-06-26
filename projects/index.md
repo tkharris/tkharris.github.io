@@ -6,7 +6,7 @@ permalink: /projects/
 
 Here are some projects that I have worked on below:
 
-## Probabilistic Context-Free Grammer Tool
+## <a name="pcfg"></a> Probabilistic Context-Free Grammer Tool
 
 This is software written in C++ that can:
 * read and write phoenix grammar files
@@ -27,26 +27,26 @@ finish) and a Powerpoint
 [presentation](http://www.cs.cmu.edu/~tkharris/pcfg/pcfg.ppt) will
 provide some background.
 
-## Olympus Spoken Dialog Platform
+## <a name="olympus"></a> Olympus Spoken Dialog Platform
 
 Olympus is a research platform for spoken dialog systems. See the
 [wiki](http://wiki.speech.cs.cmu.edu/olympus/index.php/Olympus) for
 more information.
 
-## Tutor Technologies' Code Trainer
+## <a name="code-trainer"></a> Tutor Technologies' Code Trainer
 
 Tutor Technologies is a company that I created to build and market
 intelligent tutoring systems in the programming tutoring domain. We
 wrote an authoring system for intelligent tutoring instruction and
 built a hint-based programming coach.
 
-## DNN
+## <a name="dnn"></a> DNN
 
 All of the above systems were real production systems. I have also
 recently been studying Deep Neural Networks and have done some toy
 projects in that domain. See some examples below:
 
-### Word Embeddings
+### <a name="wprd-embeddings"></a> Word Embeddings
 
 In a lot of applications you will use words as variables, but the
 naive represenation of words have no structure - each word is
