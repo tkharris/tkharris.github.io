@@ -76,6 +76,8 @@ employment:
     position: Senior Software Engineer
     company: M*Modal
     location: Pittsburgh
+    phone: "800-233-3030"
+    supervisor: Brian Ellenberger
     statement:
       - Created web services in Java (springboot) for a specific client integration.
       - Managed Ansible deploys.
@@ -85,6 +87,8 @@ employment:
     position: CEO
     company: WebKite, Inc.
     location: Pittsburgh
+    phone: ""
+    supervisor: ""
     statement:
       - >
         Created and marketed an automated advertising system which crawled websites (principally
@@ -97,6 +101,8 @@ employment:
     position: Senior Software Developer
     company: WebKite, Inc.
     location: Pittsburgh
+    phone: ""
+    supervisor: Eric Silver
     statement:
       - Joined a team that was building an online list management tool
       - Resolved backend performance issues in a Ruby Web stack
@@ -106,7 +112,7 @@ employment:
       - Interfaced product with Google Sheets via the Google Docs API
   -
     start: 2011-01-01
-    end: 2013-01-01
+    end: 2013-02-01
     position: Co-Founder and CEO
     company: Tutor Technologies, Inc.
     location: Pittsburgh
